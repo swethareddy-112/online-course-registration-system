@@ -1,0 +1,333 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+/* Navigation */
+
+header {
+    background-color: #172554;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #2563eb;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e5e7eb;
+}
+
+/* Courses */
+
+.courses-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.courses-section h2,
+.registration-section h2,
+.about-section h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+.section-text {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.course-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+.course-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    color: #666;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+.course-card h4 {
+    color: #2563eb;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.course-card button {
+    border: none;
+    background-color: #2563eb;
+    color: white;
+
+    padding: 12px 25px;
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.course-card button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Registration */
+
+.registration-section {
+    background-color: #eaf0ff;
+    padding: 70px 20px;
+}
+
+.registration-section h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+
+    background-color: white;
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    background-color: #16a34a;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #15803d;
+}
+
+/* Message */
+
+#message {
+    max-width: 600px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* About */
+
+.about-section {
+    padding: 70px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-section p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    form {
+        padding: 25px;
+    }
+}

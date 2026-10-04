@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Course Registration</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">CourseHub</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Online Course Registration</h1>
+            <p>
+                Learn new skills and build your career with our online courses.
+            </p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+
+        <h2>Available Courses</h2>
+        <p class="section-text">
+            Choose the course you want to learn.
+        </p>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript and create modern websites.</p>
+                <h4>₹4,999</h4>
+                <button onclick="selectCourse('Web Development')">
+                    Register
+                </button>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🐍</div>
+                <h3>Python Programming</h3>
+                <p>Learn Python programming from beginner to advanced level.</p>
+                <h4>₹3,999</h4>
+                <button onclick="selectCourse('Python Programming')">
+                    Register
+                </button>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">☕</div>
+                <h3>Java Programming</h3>
+                <p>Learn Java fundamentals, OOP concepts and applications.</p>
+                <h4>₹4,499</h4>
+                <button onclick="selectCourse('Java Programming')">
+                    Register
+                </button>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>Understand AI concepts, machine learning and applications.</p>
+                <h4>₹5,999</h4>
+                <button onclick="selectCourse('Artificial Intelligence')">
+                    Register
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="registration-section">
+
+        <h2>Course Registration</h2>
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select Course</label>
+
+                <select id="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Python Programming">
+                        Python Programming
+                    </option>
+                    <option value="Java Programming">
+                        Java Programming
+                    </option>
+                    <option value="Artificial Intelligence">
+                        Artificial Intelligence
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mode">Learning Mode</label>
+
+                <select id="mode" required>
+                    <option value="">-- Select Mode --</option>
+                    <option value="Online">Online</option>
+                    <option value="Offline">Offline</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Register Now
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+
+        <h2>About CourseHub</h2>
+
+        <p>
+            CourseHub is an online course registration platform that helps
+            students easily explore courses and register for their preferred
+            programs. Students can select courses, provide their details and
+            choose their preferred learning mode.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CourseHub | Online Course Registration System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
